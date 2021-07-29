@@ -1,0 +1,596 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background:url(img/picture_4.jpg); center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.title {
+    color: #fff;
+    font-size: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+
+    background-color: #fff;
+}
+
+.suptitle {
+    margin-bottom: 20px;
+
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color .1s linear;
+}
+
+.nav__link-icon1,.nav__link-icon1 {
+	margin: 0 25px;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+
+    transition: opacity .1s linear;
+}
+
+.nav__link:hover {
+    color: #fce38a;
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: #fce38a;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 40px;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.slider {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__item {
+    width: 23%;
+    padding: 20px 0;
+    position: relative;
+
+    border-top: 3px solid #fff;
+    opacity: .7;
+
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider__item.active {
+    opacity: 1;
+}
+
+.slider__item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+
+    background-color: #f38181;
+
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+
+.slider__num {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.section{
+	padding: 80px 0;
+}
+
+.section--gray{
+    background-color: #f8f8f8;
+   }
+
+.section--device {
+    background: url(img/rectangle_21_928.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    max-width: 1920px;
+    max-height: 850px;
+
+}
+
+.section__header{
+width: 100%;
+max-width: 950px;
+text-align: center;
+color: #000;
+margin: 0 auto 50px;
+
+}
+
+.section__suptitle{
+	font-family: 'Kaushan Script';
+font-size: 24px;
+line-height: 1.2;
+font-weight: 400;
+color: #333333;
+margin-bottom: 25px;
+}
+
+.section__title{
+font-size: 30px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+color: #333333;
+margin-bottom: 35px;
+}
+
+.section__text{
+ont-family: Roboto;
+font-size: 15px;
+line-height: 24px;
+font-weight: 400;
+color: #999999;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 35px auto;
+
+    background-color: #f38181;
+}
+
+.about{
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__item{
+	width: 380px;
+	height: 250px;
+	background: #95e1d3;
+	position: relative;
+}
+
+
+
+.about__img{
+	background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+/*Чтобы при наводе на картинку мы видели градиент мы должны сделать картинку немного прозрачной чтобы увидеть под ней наш итем с градиентом*/
+
+.about__item:hover .about__img img {
+	opacity: 0.1;
+}
+
+/*Чтобы градиент накладывался плавнее задаем свойству опасити транзишн*/
+
+.about__img img {
+transition: opacity 0.2s linear;
+display: block;
+max-width: 380px;
+max-height: 252px;
+}
+
+/*Чтобы сдвигать при наведении на айтм картинку имдж вверх влево*/
+
+.about__item:hover .about__img {
+	transform: translate3d(-10px, -10px, 0);
+	/*По оси Х, по оси У, по оси Z */
+
+	/*Чтобы эта трансформация происходила плавно, прописываем транзишн к этой трансформации*/
+	transition: transform 0.2s linear;
+}
+
+/*Всплывающий при наведении на картинку текст*/
+
+.about__text{
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	text-align: center;
+
+	line-height: 1.2;
+
+	/*Чтобы текст наложился поверх картинки указываем для родителя позицию релативБ а для самого текста абсолют*/
+
+	position: absolute;
+
+	/*Чтобы этот текст появлялся только при наведении, здесь нам его нужно скрыть при помощи опасити, а в ховере добавить, так же при помощи опасити*/
+
+	opacity: 0;
+	transition: opacity 0.2s linear;
+
+	/*Чтобы выровнять блок по центру родителя указаваем топ 50%, лефт 0, зет-индекс 2+*/
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	transform: translate3d(0, -50%, 0);
+	width: 100%;
+}
+
+.about__item:hover .about__text {
+	opacity: 1;
+}
+
+.statistics{
+	background:  #95e1d3;
+}
+.stat{
+	display: flex;
+
+}
+
+.stat__item{
+	flex: 1 1 0; /*Делает колонки одинаковыми по размеру*/
+	border-left: 1px solid #d2f2ec;
+	text-align: center;
+	color: #fff;
+	padding: 70px 25px;
+
+}
+
+.stat__item:last-child {
+	border-right: 1px solid #d2f2ec;
+}
+
+.stat__num{
+	font-size: 72px;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0 0 10px 0;
+}
+
+.stat__text{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+/*Services*/
+
+.services{
+    display: flex;
+}
+
+.services__item{
+    flex: 1 1 0;
+    padding-left: 85px;
+    padding-right: 35px;
+    position: relative;
+}
+
+/*Чтобы можно было иконке указать любое место в блоке родителя*/
+.services__icon{
+    position: absolute; /* Иконка выбивается наверх */
+    top: 0; /*Иконка передвигается вверх*/
+    left: 25px; /* Иконка отодвигается от левого края */
+    z-index: 1;
+}
+
+.services__title{
+font-size: 14px;
+text-transform: uppercase;
+color: #333;
+margin-bottom: 10px;
+}
+
+.services__text{
+font-size: 15px;
+color: #999;
+}
+
+/*Линия между блоками, просто тег <hr>*/
+hr {
+margin: 40px 0;
+background-color: #f1f1f1;
+height: 1px;
+
+}
+
+/*Devices*/
+
+.devices{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices__item{
+    display: block;
+    margin: 60px;
+}
+
+.devices__item_iphon{
+  position: absolute;
+  top: 130px;  
+  right: -160px;
+  z-index: 1;
+}
+
+/*We do*/
+
+.wedo{
+    display: flex;
+}
+
+.wedo__item{
+    flex: 50%;
+}
+
+/*accordion*/
+
+.accordion__item{
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.accordion__header{
+     border: 1px solid #e5e5e5;
+     padding: 15px 20px 15px 65px;
+     position: relative;
+     cursor: pointer;
+}
+
+.accordion__title{
+font-size: 14px;
+text-transform: uppercase;
+font-weight: 700;
+color: #333333;
+}
+
+.accordion__item.active
+.accordion__content{
+    display: block;
+}
+
+.accordion__content{
+display: none;
+padding: 15px 20px;
+font-size: 15px;
+font-weight: 300;
+font-style: italic;
+color: #999999;
+}
+
+
+.accordion__icon{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.accordion__item.active
+.accordion__icon_arrow{
+    transform: translateY(-50%) rotate(0deg);
+}
+
+.accordion__icon_arrow{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 2;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/*Section--gray*/
+
+.reviews{
+    padding: 0 110px;
+    position: relative;
+    }
+
+.reviews__item{
+position: relative;
+padding-left: 205px;
+
+}
+
+.reviews__text{
+font-size: 24px;
+line-height: 36px;
+font-weight: 300;
+font-style: italic;
+color: #999999;
+margin-bottom: 15px;
+}
+
+.reviews__author{
+    font-family: 'Kaushan Script';
+font-size: 24px;
+color: #333333;
+}
+
+.reviews__photo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews__author:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    margin-right: 10px;
+    background-color: #f38181;
+}
+
+
+
